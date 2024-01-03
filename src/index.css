@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Source Code Pro", monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background-hero {
+  background-image: url("./assets/ccchaos.svg");
+  background-position: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.profileBack {
+  background-image: url("./assets/profileBack.svg");
+  background-repeat: no-repeat;
+  background-size: 350px;
+  width: 100%;
+  padding: 10px;
+  background-position: center;
+  height: auto;
+}
+.profileBack2 {
+  background-image: url("./assets/profileBack.svg");
+  background-repeat: no-repeat;
+  background-size: 350px;
+  width: 500px;
+  padding: 10px;
+  background-position: center;
+  height: 35vh;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .profileBack2 {
+    background-size: 250px;
+    height: 40vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background-hero {
+    background-position: -1200px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .profileBack2 img {
+    width: 300px;
+    height: 300px;
+  }
+}
